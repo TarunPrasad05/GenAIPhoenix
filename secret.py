@@ -1,4 +1,9 @@
+from genai import getGenAiResponse
+
 def getResponse(subIssue):
+    return getGenAiResponse(subIssue)
+
+def getMockResponsee(subIssue):
     match subIssue:
         case "Credit card company won't increase or decrease your credit limit":
             return "Contact your credit card company's customer service to formally request a credit limit change and provide any necessary documentation to support your request."
