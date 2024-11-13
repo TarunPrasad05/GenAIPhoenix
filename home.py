@@ -12,8 +12,11 @@ st.write('Welcome to the home page')
 with st.chat_message("assistant"):
     st.write("Welcome to IVR Resolution Bot")
 
-    
-prompt = st.chat_input("How can I help you?")
+
+inpu = "How can I help you?"
+   
+prompt = st.chat_input(inpu)
+
 if prompt:
     resolution = getResponse(prompt)
     st.write(f"You asked: {prompt}")
